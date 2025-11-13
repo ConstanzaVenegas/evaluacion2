@@ -1,4 +1,3 @@
-/* === VARIABLES DE COLOR === */
 :root {
   --primary: #00c4b3;
   --primary-dark: #009c8a;
@@ -9,13 +8,12 @@
   --error: #e34c4c;
 }
 
-/* === BASE === */
 body {
   margin: 0;
   font-family: "Poppins", "Segoe UI", sans-serif;
   background: var(--bg);
   color: #222;
-  margin-top: 85px; /* espacio para topbar */
+  margin-top: 85px;
 }
 
 h1, h2, h3 {
@@ -24,7 +22,6 @@ h1, h2, h3 {
   margin-bottom: 15px;
 }
 
-/* === TOPBAR FIJO === */
 .topbar {
   position: fixed;
   top: 0;
@@ -65,7 +62,6 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* === TITULO SUPERIOR (usado en cada vista) === */
 .titulo-seccion {
   background-color: #00bfa6;
   color: white;
@@ -86,14 +82,12 @@ h1, h2, h3 {
   gap: 10px;
 }
 
-/* === CONTENEDOR PRINCIPAL === */
 .container {
   max-width: 1100px;
   margin: 30px auto;
   padding: 20px;
 }
 
-/* === TARJETAS === */
 .card {
   background: var(--white);
   border-radius: 12px;
@@ -107,7 +101,6 @@ h1, h2, h3 {
   transform: translateY(-2px);
 }
 
-/* === FORMULARIO === */
 label {
   font-weight: 500;
   color: #444;
@@ -137,14 +130,12 @@ textarea {
   height: 80px;
 }
 
-/* === GRID FORMULARIO === */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 15px;
 }
 
-/* === BOTONES === */
 button, .btn {
   background: var(--primary);
   color: white;
@@ -176,7 +167,6 @@ button:active {
   background: var(--error);
 }
 
-/* === TABLAS === */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -212,12 +202,10 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-/* === BOTONES EN TABLA === */
 .actions button {
   margin-right: 6px;
 }
 
-/* === TOAST === */
 .toast {
   position: fixed;
   bottom: 20px;
@@ -246,7 +234,6 @@ td {
   background: var(--error);
 }
 
-/* === BOTONES CENTRADOS === */
 .button-group {
   display: flex;
   justify-content: center;
@@ -254,7 +241,6 @@ td {
   margin-top: 20px;
 }
 
-/* === TOTAL (cotización) === */
 h3#totalDisplay {
   text-align: center;
   font-size: 1.3rem;
@@ -262,7 +248,6 @@ h3#totalDisplay {
   margin-top: 15px;
 }
 
-/* === FOOTER === */
 footer {
   background-color: #f3fdfc;
   color: #009e8e;
@@ -274,12 +259,74 @@ footer {
   border-top: 2px solid #00bfa6;
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
   }
 }
+
+/* PANEL PRINCIPAL */
+
+.contenedor-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titulo-pill {
+    background: #d4f6f2;
+    color: #008f7a;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.tarjeta-central {
+    background: #ffffff;
+    width: 55%;
+    padding: 45px 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.botones-centrales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    width: 70%;
+}
+
+.btn-pill {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 35px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-pill:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
 
 
 

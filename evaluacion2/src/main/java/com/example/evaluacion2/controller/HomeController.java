@@ -8,7 +8,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        // Redirige automáticamente al index.html que está en /static
+        
         return "forward:/index.html";
     }
 }
