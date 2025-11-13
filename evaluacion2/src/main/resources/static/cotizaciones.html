@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizaciones y Ventas — Mueblería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- === BARRA SUPERIOR === -->
+  <header class="titulo-seccion">
+    <h1>💰 Cotizaciones y Ventas</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Crear Cotización</h2>
+
+      <div class="form-grid">
+        <div class="wide">
+          <label>Cliente</label>
+          <input type="text" id="cliente" placeholder="Ej: Constanza Venegas">
+        </div>
+
+        <div>
+          <label>Seleccionar Mueble</label>
+          <select id="muebleSelect"></select>
+        </div>
+
+        <div>
+          <label>Seleccionar Variación</label>
+          <select id="variacionSelect">
+            <option value="">Normal (sin variación)</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Cantidad</label>
+          <input type="number" id="cantidad" value="1" min="1">
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button id="agregarBtn">➕ Agregar ítem</button>
+      </div>
+
+      <h3 id="totalDisplay">Total: $0 CLP</h3>
+
+      <div class="button-group" style="justify-content: flex-end;">
+        <button id="crearCotizacionBtn">💾 Crear Cotización</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Detalles de Cotización</h2>
+      <table id="tablaDetalles">
+        <thead>
+          <tr>
+            <th>Mueble</th>
+            <th>Variación</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Mueblería © 2025 — Desarrollado por Cony 
+  </footer>
+
+  <script src="js/cotizaciones.js"></script>
+</body>
+</html>
