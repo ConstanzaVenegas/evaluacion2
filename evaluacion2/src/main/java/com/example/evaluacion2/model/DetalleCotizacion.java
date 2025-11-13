@@ -31,7 +31,7 @@ public class DetalleCotizacion {
 
     private Double subtotal;
 
-    // Método para calcular el subtotal correctamente
+    
     public void calcularSubtotal() {
         double precioFinal = mueble.getPrecioBase();
         if (variacion != null) {

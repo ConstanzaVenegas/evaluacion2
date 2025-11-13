@@ -21,7 +21,7 @@ public class Cotizacion {
     @JsonManagedReference
     private List<DetalleCotizacion> detalles;
 
-    // Getters y setters
+    
     public Long getIdCotizacion() { return idCotizacion; }
     public void setIdCotizacion(Long idCotizacion) { this.idCotizacion = idCotizacion; }
 
